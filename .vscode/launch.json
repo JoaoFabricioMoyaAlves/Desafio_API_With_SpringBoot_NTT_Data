@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiStringApplication<api_string>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ghost.api_string.ApiStringApplication",
+            "projectName": "api_string",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50354 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=api_string"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiProdutoApplication<api_produto>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ghost.api_produto.ApiProdutoApplication",
+            "projectName": "api_produto",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51424 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=api_produto"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiPedidoApplication<api_pedido>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ghost.api_pedido.ApiPedidoApplication",
+            "projectName": "api_pedido",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
