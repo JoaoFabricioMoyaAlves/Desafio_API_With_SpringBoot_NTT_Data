@@ -30,6 +30,17 @@
             "mainClass": "ghost.api_pedido.ApiPedidoApplication",
             "projectName": "api_pedido",
             "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=53030 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=api_pedido"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<api_gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ghost.api_gateway.ApiGatewayApplication",
+            "projectName": "api_gateway",
+            "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
     ]

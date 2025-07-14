@@ -20,7 +20,7 @@ public class ApiProdutoApplication {
 @RestController
 @RequestMapping("produto")
 
- class ProdutoController{
+class ProdutoController{
 
 	@GetMapping
 	public String produto() {
